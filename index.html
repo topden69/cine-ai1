@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineAI - Your Movie Universe</title>
+    <style>
+        /* Base Styles and Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e; /* Dark, sci-fi inspired background */
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Utility Class for Center Alignment */
+        .center-text {
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #0f0f1b; /* Slightly darker header */
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #8c7ae6; /* Bright, AI-themed color */
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: #aaa;
+            margin: 5px 0 0;
+            font-size: 1.1em;
+        }
+
+        /* Main Content Grid */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ranking-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding-bottom: 50px;
+        }
+
+        /* Movie Card Styling */
+        .movie-card {
+            background-color: #2b2b4d;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .movie-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .movie-info h3 {
+            margin: 0 0 10px;
+            color: #e0e0e0;
+            font-size: 1.5em;
+        }
+
+        .movie-info p {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 0;
+            min-height: 40px; /* Ensure space for tagline */
+        }
+
+        /* Rank Badge Styling (Inline CSS for specific numbers) */
+        .rank-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #e94b3c;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2em;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #0f0f1b;
+            color: #aaa;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            border-top: 1px solid #2b2b4d;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="center-text">
+        <h1 style="color: #4CAF50;">CINEAI RANKING</h1>
+        <p>Your Interests, Uncovered. Experience cinema tailored just for you.</p>
+    </header>
+
+    <main>
+        <h2 style="color: #fddb3a; text-align: center; margin-bottom: 40px; font-size: 2em; text-transform: uppercase;">
+            <span style="border-bottom: 3px solid #fddb3a; padding-bottom: 5px;">TOP AI'S FILMS TO WATCH</span>
+        </h2>
+
+        
+        <div class="ranking-container">
+
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: gold; color: #333;">#1</div>
+                <img src="images/movie8.jpg.png" alt="The Laughter Riot Movie Poster">
+                <div class="movie-info">
+                    <h3>LOST IN SUNSET</h3>
+                    
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: violet; color: #333;">#2</div>
+                <img src="images/movie12.jpg.png" alt="The Laughter Riot Movie Poster">
+                <div class="movie-info">
+                    <h3>URBAN BLITZ</h3>
+                    
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: purple; color: #333;">#3</div>
+                <img src="images/movie7.jpg.png" alt="The Laughter Riot Movie Poster">
+                <div class="movie-info">
+                    <h3>THE ELDERWOOD CHRONICLES</h3>
+                    
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: brown; color: #333;">#4</div>
+                <img src="images/movie11.jpg.png" alt="The Laughter Riot Movie Poster">
+                <div class="movie-info">
+                    <h3>WHISPERS OF THE GOLDEN AGE</h3>
+                    
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: skyblue; color: #333;">#5</div>
+                <img src="images/movie9.jpg.png" alt="The Laughter Riot Movie Poster">
+                <div class="movie-info">
+                    <h3>COSMIC ODYSSEY</h3>
+
+                </div>
+            </div> 
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: green; color: #333;">#6</div>
+                <img src="images/movie10.jpg.png" alt="The Neon Shadow">
+                <div class="movie-info">
+                    <h3>THE NEON SHADOW</h3>
+            
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: gold; color: #333;">#7</div>
+                <img src="images/movie5.jpg.png" alt="The Laughter Riot Movie Poster">
+                <div class="movie-info">
+                    <h3>THE LAUGHTER RIOT</h3>
+                    
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: silver; color: #333;">#8</div>
+                <img src="images/movie1.jpg.png" alt="Courtside Glory Movie Poster">
+                <div class="movie-info">
+                    <h3>COURTSIDE GLORY</h3>
+                    
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: #cd7f32; color: white;">#9</div>
+                <img src="images/movie4.jpg.png" alt="Untamed Realms Movie Poster">
+                <div class="movie-info">
+                    <h3>UNTAMED REALMS</h3>
+                    
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: #8c7ae6; color: white;">#10</div>
+                <img src="images/movie3.jpg.png" alt="Harmony's Echoes Movie Poster">
+                <div class="movie-info">
+                    <h3>HARMONY'S ECHOES</h3>
+                    
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: #4CAF50; color: white;">#11</div>
+                <img src="images/movie2.jpg.png" alt="The Lumina Forest Movie Poster">
+                <div class="movie-info">
+                    <h3>THE LUMINA FOREST</h3>
+                    
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="rank-badge" style="background-color: #e94b3c; color: white;">#12</div>
+                <img src="images/movie6.jpg.png" alt="The Haunting of Blackwood Manor Movie Poster">
+                <div class="movie-info">
+                    <h3>THE HAUNTING OF BLACKWOOD MANOR</h3>
+                    
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CineAI - All Rights Reserved. | AI-Powered Recommendations.</p>
+    </footer>
+
+</body>
+</html>
